@@ -16,7 +16,7 @@ public class EvaluateReversePolishNotation
 		int returnValue = 0;
 		String operator = "+-*/";
 		Stack<String> stack = new Stack<String>();
-		for (int i : tokens)
+		for (String i : tokens)
 		{
 			if (!operator.contains(i))
 			{
