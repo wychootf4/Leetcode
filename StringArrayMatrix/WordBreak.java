@@ -1,7 +1,6 @@
 /*
-Given a string s and a dictionary of words dict, determine if s can 
-be segmented into a space-separated sequence of one or more 
-dictionary words.
+Given a string s and a dictionary of words dict, determine if s can be segmented into a 
+space-separated sequence of one or more dictionary words.
 
 For example, given
 s = "leetcode",
@@ -21,14 +20,18 @@ public class WordBreak
 	}
 	public static boolean wordBreak(String s,Set<String> dict){
 		boolean[] t = new boolean[s.length() + 1];
-		t[0] = true;
+		t[0] = true; // initial state, suppose t[0] = true
 		for (int i = 0;i < s.length() ;i++ )
 		{
-			if (!t[i])
+			/*
+			reduce overlapped subproblem, if t[i] = false means that it never 
+			reached before and therefore no need to run code below, run next loop
+			*/
+			if (!t[i]) 
 			{
 				continue;
 			}
-			for (String a : dict)
+			for (String a : dict) // check each dict word with substring
 			{
 				int len = a.length();
 				int end = i + len;
@@ -50,3 +53,5 @@ public class WordBreak
 	}
 }
 // Time complexity: O(string length * dict size)
+// Using DP to solve this problem, t[i] = true represents 0...i - 1 can be segmented   
+// into dict words

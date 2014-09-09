@@ -18,13 +18,13 @@ public class EvaluateReversePolishNotation
 		Stack<String> stack = new Stack<String>();
 		for (String i : tokens)
 		{
-			if (!operator.contains(i))
+			if (!operator.contains(i)) // String in tokens is not "+-*/"
 			{
 				stack.push(i);
 			}else{
-				int a = Integer.valueOf(stack.pop());
+				int a = Integer.valueOf(stack.pop()); // pop out two numbers
 				int b = Integer.valueOf(stack.pop());
-				int index = operator.indexOf(i);
+				int index = operator.indexOf(i); // check which operator i is
 				switch(index){
 					case 0:
 						stack.push(String.valueOf(b + a));
@@ -41,7 +41,7 @@ public class EvaluateReversePolishNotation
 				}
 			}
 		}
-		returnValue = Integer.valueOf(stack.pop());
+		returnValue = Integer.valueOf(stack.pop()); // pop out result
 		return returnValue;
 	}
 }

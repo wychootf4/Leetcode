@@ -1,6 +1,6 @@
 /*
-Given a string S, find the longest palindromic substring in S. You may assume that the maximum 
-length of S is 1000, and there exists one unique longest palindromic substring.
+Given a string S, find the longest palindromic substring in S. You may assume that the 
+maximum length of S is 1000, and there exists one unique longest palindromic substring.
 */
 public class LongestPalindromicSubstring
 {
@@ -20,12 +20,12 @@ public class LongestPalindromicSubstring
 		String longest = s.substring(0,1);
 		for (int i = 0;i < s.length() ;i++ )
 		{
-			String tmp = helper(s,i,i);
+			String tmp = helper(s,i,i); // check center i
 			if (tmp.length() > longest.length())
 			{
 				longest = tmp;
 			}
-			tmp = helper(s,i,i + 1);
+			tmp = helper(s,i,i + 1); // check center i,i + 1
 			if (tmp.length() > longest.length())
 			{
 				longest = tmp;
@@ -33,6 +33,9 @@ public class LongestPalindromicSubstring
 		}
 		return longest;
 	}
+	/*
+	check from center point to both sides
+	*/
 	public static String helper(String s,int start,int end){
 		while (start >= 0 && end <= s.length() - 1 && s.charAt(start) == s.charAt(end))
 		{
