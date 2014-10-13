@@ -12,7 +12,7 @@ public class Solution {
         StringBuilder path = new StringBuilder();
         gpHelper(result, path, n, n);
         return result;
-    }
+    } 
 
     public void gpHelper(List<String> result, StringBuilder path, int left, int right){
         // 左右括号都为0，证明该加的括号都被加上了，如何控制不合法的组合？看下面
