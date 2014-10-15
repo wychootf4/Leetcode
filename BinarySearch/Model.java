@@ -4,6 +4,7 @@ and a target number, find the first index of this number in O(log n) time comple
 If the target number does not exist in the array, return -1.
 Example If the array is [1, 2, 3, 3, 4, 5, 10], for given target 3, return 2.
 */
+// 当要求用O(logn)完成时可以考虑binary search
 
 // 用while loop显得比recursion好一些，另外recursion容易造成错误，适当情况再用
 public class Solution{
