@@ -7,6 +7,7 @@ Find the minimum element.
 
 You may assume no duplicate exists in the array.
 */
+// Tag: Array, Binary Search
 
 public class Solution {
     public int findMin(int[] num) {

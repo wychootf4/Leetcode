@@ -52,3 +52,23 @@ public class Solution{
         return -1;
     }
 }
+
+/*
+拓展1：
+Find the First Bad Version
+The code base version is an integer and start from 0 to n. One day,
+someone commit a bad version in the code case, so it caused itself and
+the following versions are all failed in the unittests. You can determine
+whether a version is bad by the following interface:
+boolean isBadVersion(int version); Find the first bad version.
+好的都是0，坏的都是1，找到出现的第一个1，用模板找出现的第一个1.
+*/
+
+/*
+Find a peak
+There is an array which we can assume the numbers in adjcent positions are different.
+and A[0] < A[1] && A[A.length - 2] > A[A.length - 1]. We consider a position P is
+a peak if A[P] > A[P-1] && A[P] > A[P+1]. Find a peak in this array.
+第一句两个判断条件确保肯定有peak，然后mid与start比较，如果不大于start，则左侧必定有peak，因为是刚开始是
+增函数，如果mid小于start则是在某点开始减了。该点就是peak
+*/

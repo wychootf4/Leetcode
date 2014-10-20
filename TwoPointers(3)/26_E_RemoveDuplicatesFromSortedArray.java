@@ -8,6 +8,7 @@ Given input array A = [1,1,2],
 
 Your function should return length = 2, and A is now [1,2].
 */
+// Tag: Array, Two Pointers
 
 public class Solution {
     public int removeDuplicates(int[] A) {

@@ -10,6 +10,7 @@ Here are few examples.
 [1,3,5,6], 7 → 4
 [1,3,5,6], 0 → 0
 */
+// Tag: Array, Binary Search
 
 // 基本思路是如果能找到就返回，否则找到最后一个比target小的index，然后index + 1。如果target比所有的数都小
 // 则返回0

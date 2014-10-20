@@ -7,6 +7,7 @@ You are given a target value to search. If found in the array return its index, 
 
 You may assume no duplicate exists in the array.
 */
+// Tag: Array, Binary Search
 
 // 思路是想象数组分为两段，然后判断mid在哪一段上,case1是较大数值子数组，case2是较小数值子数组；以题目例子，case1是4567，
 // case2是012。注意此时的A[mid]不是逻辑上数值为接近最中间的那个，只是为了通过二分缩小查找范围，while loop循环两次之后肯定

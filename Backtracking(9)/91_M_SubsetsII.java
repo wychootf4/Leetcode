@@ -16,6 +16,7 @@ If S = [1,2,2], a solution is:
   []
 ]
 */
+// Tag: Array, Backtracking
 
 public class Solution {
     public List<List<Integer>> subsetsWithDup(int[] num) {

@@ -13,6 +13,7 @@ If n = 4 and k = 2, a solution is:
   [1,4],
 ]
 */
+// Tag: Backtracking
 
 public class Solution {
     public List<List<Integer>> combine(int n, int k) {

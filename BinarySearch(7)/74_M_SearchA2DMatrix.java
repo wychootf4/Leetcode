@@ -16,6 +16,7 @@ Consider the following matrix:
 Given target = 3, return true.
 
 */
+// Tag: Array, Binary Search
 
 // 主要思路是将二维数组的矩阵转化为一维数组
 public class Solution {

@@ -6,6 +6,7 @@ Would this affect the run-time complexity? How and why?
 
 Write a function to determine if a given target is in the array.
 */
+// Tag: Array, Binary Search
 
 // 最坏情况是1111111111111111，找2的情况。假设2先拿出来然后是要在循环最后才被确定位置加进去，则至少检查了n - 1个元素
 // 时间复杂度从O(logn)变为O(n)
