@@ -27,28 +27,39 @@ public class Solution {
 /*
 public class Solution {
     public boolean search(int[] A, int target) {
-        Arrays.sort(A);
+
         int start = 0;
         int end = A.length - 1;
         int mid;
-
         while (start + 1 < end){
             mid = start + (end - start) / 2;
             if (A[mid] == target){
                 return true;
-            }else if (A[mid] < target){
-                start = mid;
+            }
+            if (A[mid] > A[start]){
+                if (A[start] <= target && target <= A[mid]){
+                    end = mid;
+                }else{
+                    start = mid;
+                }
+            }else if (A[mid] < A[start]){
+                if (A[mid] <= target && target <= A[end]){
+                    start = mid;
+                }else{
+                    end = mid;
+                }
+            // 当A[mid] == A[start]时无法判断会死循环
             }else{
-                end = mid;
+                start++;
             }
         }
 
-        if (A[end] == target){
-            return true;
-        }
         if (A[start] == target){
             return true;
+        }else if (A[end] == target){
+            return true;
         }
+
         return false;
     }
 }

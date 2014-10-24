@@ -29,6 +29,8 @@ public class Solution {
                 start = mid;
             }
         }
+        // 如果mid在上面一段，只是start从mid开始，start永远在上面一段；如果mid在下面一段，只是
+        // end在mid结束，end永远在下面一段。保证start和end点最后趋于最小点
         // 经过循环最后min在start和end两个点取到，取出两个点中小者
         if (num[start] < num[end]){
             return num[start];
