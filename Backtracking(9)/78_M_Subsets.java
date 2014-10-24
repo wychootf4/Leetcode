@@ -19,6 +19,7 @@ If S = [1,2,3], a solution is:
 ]
 */
 // 模板原题，注释参照模板
+// Tag: Array, Backtracking, Bit Manipulation
 
 public class Solution {
     public List<List<Integer>> subsets(int[] S) {

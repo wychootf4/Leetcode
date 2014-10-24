@@ -14,6 +14,7 @@ A solution set is:
 [2, 6]
 [1, 1, 6]
 */
+// Tag: Array, Backtracking
 
 public class Solution {
     public List<List<Integer>> combinationSum2(int[] num, int target) {
