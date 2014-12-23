@@ -1,4 +1,4 @@
 Leetcode
 ========
-first overview of lc
+寒假先把做过的题最快速度复习一遍，然后继续往后刷，保证最起码先刷了一遍
 Leetcode
