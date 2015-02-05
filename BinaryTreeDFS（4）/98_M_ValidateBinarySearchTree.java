@@ -33,12 +33,16 @@ The above binary tree is serialized as "{1,2,3,#,#,4,#,#,5}".
  *     TreeNode(int x) { val = x; }
  * }
  */
+ // http://www.cnblogs.com/yuzhangcmu/p/4177047.html 里面有四种解法
 public class Solution {
     public boolean isValidBST(TreeNode root) {
-        return validBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        if (root == null){
+            return true;
+        }
+        return validBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
 
-    public boolean validBST(TreeNode root, int min, int max){
+    public boolean validBST(TreeNode root, long min, long max){
         // 如果根或者叶子结点的left或right为空，则此子树是BST，返回true
         if (root == null){
             return true;

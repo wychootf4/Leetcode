@@ -84,7 +84,7 @@ public class Solution {
                 }else if (curr.right != null){
                     stack.push(curr.right);
                 }
-            // 从下往上遍历，比如此时stack里有AB，prev = curr = B，此时经过else会把B加入result，同时
+            // else if是从下往上回溯，比如此时stack里有AB，prev = curr = B，此时经过else会把B加入result，同时
             // B出栈，然后进入下一次循环时prev = B, curr = A,而此时curr.right为C，将C入栈，这是已处理
             // 完左孩子然后回到父节点时的判断条件
             //  A
@@ -104,6 +104,7 @@ public class Solution {
                 result.add(curr.val);
                 stack.pop();
             }
+            // 当前指针被置为prev记录下来，继续下一次循环
             prev = curr;
         }
         return result;
