@@ -14,9 +14,11 @@ Note: Recursive solution is trivial, could you do it iteratively?
 */
 // Tag: Tree, Stack
 
+// 二叉树的非递归遍历：http://www.cnblogs.com/dolphin0520/archive/2011/08/25/2153720.html
+
 // Recursion solution: Divide & Conquer
 // 思路：取到最下面的左子树和右子树，返回给上一层的left，然后取到上一层的right，打包上一层自身的node然后层层
-// 往上返
+// 往上返, 分治是先算出当前点的左子树的遍历和右子树的遍历，最后把结果拼接起来。而traverse是完全的遍历过程
 /**
  * Definition for binary tree
  * public class TreeNode {
