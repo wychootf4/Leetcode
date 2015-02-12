@@ -16,6 +16,8 @@ node down to the farthest leaf node.
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+ // 分治的思想就是把大问题拆成小问题，这里要求整棵树的最大深度，就看和左右子树的关系，即左右子树最大深度+1
 public class Solution {
     public int maxDepth(TreeNode root) {
         if (root == null){

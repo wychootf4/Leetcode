@@ -10,6 +10,25 @@
 比如D和F的最近公共祖先就是B
 */
 
+/*
+Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two nodes.
+
+The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.
+
+Example
+              4
+             / \
+            3   7
+               / \
+              5   6
+
+For 3 and 5, the LCA is 4.
+
+For 5 and 6, the LCA is 7.
+
+For 6 and 7, the LCA is 7.
+*/
+
 Version 1: Traditional Method
 // 思路：从两个点得到两条到根的路径，然后逆序比较找到分道扬镳处然后返回其parent就是两个点最近的公共祖先
 // 此方法时间和空间复杂度都是O(N)，很直观但是需要有parent这个指针，如果TreeNode里不提供就不能这么做
@@ -22,7 +41,7 @@ public class Solution {
         }
         return list;
     }
-    public TreeNode latestCommonAncestor(TreeNode node1, TreeNode node2) {
+    public TreeNode lowestCommonAncestor(TreeNode node1, TreeNode node2) {
         ArrayList<TreeNode> list1 = getPath2Root(node1);
         ArrayList<TreeNode> list2 = getPath2Root(node2);
 
@@ -60,7 +79,7 @@ public class Solution {
         TreeNode right = getAncestor(root.right, node1, node2);
 
         // Conquer
-        // 当前root点得左右子树返回值都不为空证明两个node一边一个，返回root即可
+        // 当前root点的左右子树返回值都不为空证明两个node一边一个，返回root即可
         if (left != null && right != null) {
             return root;
         }
@@ -75,7 +94,7 @@ public class Solution {
         return null;
     }
 
-    public TreeNode latestCommonAncestor(TreeNode node1, TreeNode node2) {
+    public TreeNode lowestCommonAncestor(TreeNode node1, TreeNode node2) {
         if (node1 == null || node2 == null) {
             return null;
         }
