@@ -57,3 +57,5 @@ public class Solution {
         return validBST(root.left, min, root.val) && validBST(root.right, root.val, max);
     }
 }
+
+// 还可以利用中序遍历，如果有序就是二叉搜索树

@@ -1,3 +1,126 @@
+/*
+Given a root of Binary Search Tree with unique value for each node.  Remove the node with given value.
+If there is no such a node with given value in the binary search tree, do nothing. You should keep the
+tree still a binary search tree after removal.
+
+Example
+Given binary search tree:
+
+         5
+        / \
+       3   6
+      / \
+     2   4
+
+Remove 3, you can either return:
+
+         5
+        / \
+       2   6
+        \
+         4
+or :
+
+         5
+        / \
+       4   6
+      /
+     2
+*/
+
+/**
+* Definition of TreeNode:
+* public class TreeNode {
+*     public int val;
+*     public TreeNode left, right;
+*     public TreeNode(int val) {
+*         this.val = val;
+*         this.left = this.right = null;
+*     }
+* }
+*/
+public class Solution {
+    /**
+    * @param root: The root of the binary search tree.
+    * @param value: Remove the node with given value.
+    * @return: The root of the binary search tree after removal.
+    */
+    public TreeNode removeNode(TreeNode root, int value) {
+        // 新建一个dummy node作为root的父节点
+        TreeNode dummy = new TreeNode(0);
+        dummy.left = root;
+
+        // 找到待删除点的父节点
+        TreeNode parent = findNode(dummy, root, value);
+        // node作为待删除点的指针
+        TreeNode node;
+
+        if (parent.left != null && parent.left.val == value){
+            // 待删除点是父节点的左孩子
+            node = parent.left;
+        }else if (parent.right != null && parent.right.val == value){
+            // 待删除点是父节点的右孩子
+            node = parent.right;
+        }else{
+            return dummy.left;
+        }
+
+        deleteNode(parent, node);
+        return dummy.left;
+    }
+
+    public TreeNode findNode(TreeNode parent, TreeNode node, int value){
+        if (node == null){
+            return parent;
+        }
+        if (node.val == value){
+            return parent;
+        }
+        if (value < node.val){
+            return findNode(node, node.left, value);
+        }else{
+            return findNode(node, node.right, value);
+        }
+    }
+
+    public void deleteNode(TreeNode parent, TreeNode node){
+        // 如果待删除点没有右子树
+        if (node.right == null){
+            if (parent.left == node){
+                parent.left = node.left;
+            }else{
+                parent.right = node.left;
+            }
+        // 待删除点有右子树
+        }else{
+            TreeNode maxNodeParent = node;
+            TreeNode maxNode = node.right;
+
+            while (maxNode.left != null){
+                maxNodeParent = maxNode;
+                maxNode = maxNode.left;
+            }
+
+            if (maxNodeParent.left == maxNode){
+                maxNodeParent.left = maxNode.right;
+            }else{
+                maxNodeParent.right = maxNode.right;
+            }
+
+            maxNode.left = node.left;
+            maxNode.right = node.right;
+
+            if (parent.left == node){
+                parent.left = maxNode;
+            }else{
+                parent.right = maxNode;
+            }
+        }
+    }
+}
+
+/*
+Note:
 // http://answer.ninechapter.com/solutions/delete-a-node-in-binary-search-tree/
 // http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/9-BinTree/BST-delete.html
 
@@ -89,3 +212,4 @@ public class Solution {
         return dummyNode.left;
     }
 }
+*/
