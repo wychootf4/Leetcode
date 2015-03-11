@@ -24,6 +24,7 @@ public class Solution {
             return null;
         }
 
+        // 当遍历x.next时一定确保x的非空的
         // 用node控制向后遍历，扫到该遍历的点，最后返回head就是处理后的链表
         ListNode node = head;
         while (node.next != null){

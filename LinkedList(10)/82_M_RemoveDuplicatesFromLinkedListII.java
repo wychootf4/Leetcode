@@ -34,14 +34,15 @@ public class Solution {
         dummy.next = head;
         head = dummy;
 
-        // 初始的head是dummy点，所以一直检查next和next.next是否为空，不为空则继续遍历，头是不需要检查的
+        // 初始的head是dummy点，所以一直检查next和next.next是否为空，不为空则继续遍历，头是不需要检查的。当next.next为空时证明当前的node
+        // 是倒数第二个点，不需要再向后遍历了
         while (head.next != null && head.next.next != null){
             // 如果next和next.next的值相同，将next的值存下来
             if (head.next.val == head.next.next.val){
                 int val = head.next.val;
-                // 当该删的点都删去了，head已经指向最初next.next点时，此时head.next还没有被检查过，需要看是否为空还有是否
-                // 与head的值相同，如果相同则接着删，如果不相同跳出内层循环
-                // 由于需要和前面的值比较，而前面的值如果相同已经被删掉了，所以要提前保存为val供比较用
+                // 循环条件1：当该删的点都删去了，head已经指向最初next.next点时，此时head.next还没有被检查过，需要看是否为空还有是否
+                // 与head的值相同，如果相同则接着删，如果不相同证明head.next后面相同的点已经删完了，跳出内层循环继续向后遍历
+                // 循环条件2：在内层循环中将head.next的值与之前存的val比较，如果相同就把head.next删掉
                 while (head.next != null && head.next.val == val){
                     head.next = head.next.next;
                 }
