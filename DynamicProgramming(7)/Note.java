@@ -74,5 +74,16 @@ state: f[x][y]表示我从起点走到x,y
 function: 研究走到x,y这个点之前的一步
 initialize：起点
 answer：终点
+（2）Sequence DP
+state: f[i]表示前i个位置/数字/字母，以第i个为...
+function: f[i] = f[j]...j是i之前的一个位置
+initialize: f[0]...
+answer: f[n - 1]...
+（3）Two Sequences DP
+state: f[i][j]代表第一个sequence的前i个数字/字符 配上第二个sequence的前j个...
+function: f[i][j] = 研究第i个和第j个的匹配关系
+initialize: f[i][0]和f[0][i]
+answer: f[s1.length()][s2.length()]
 
-4.记忆化搜索本质上也是动态规划，实现动态规划的两种方式是记忆化搜索和循环
+
+7.记忆化搜索本质上也是动态规划，实现动态规划的两种方式是记忆化搜索和循环
