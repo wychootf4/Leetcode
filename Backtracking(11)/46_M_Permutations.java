@@ -18,7 +18,7 @@ public class Solution {
     public void helper(List<List<Integer>> result, List<Integer> path, int[] num){
         if (path.size() == num.length){
             result.add(new ArrayList<Integer>(path));
-            return;
+            return;  
         }
 
         for (int i = 0; i < num.length; i++){
