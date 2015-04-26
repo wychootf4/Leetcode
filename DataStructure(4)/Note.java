@@ -53,3 +53,30 @@ Closed Hashing: 发生冲突后向后检索有空的放进去，这样查找效�
 What's the differences of: HashTable, HashSet and HashMap, which one is thread safe?
 HashTable is thread safe, it has synchronized mechanism.
 HashSet vs HashMap: HashSet only has key, only have value of true or false; HashMap has key and value.
+
+4. Heap (Priority Queue, heapq)
+(1) Operations
+O(logn) Add
+O(logn) Remove
+O(1) Min/Max
+
+(2) Implementation
+Low level data structure: Dynamic Array
+
+Heap{
+    elems[], size;
+}
+elems[1] - root, also the minimum elem in elems
+i's left child: i * 2, right child: i * 2 + 1
+
+Internal Method: shift up, shift down
+Add: Push back to elems; size++; shift up
+Remove: Replace the elem to be removed whith the last elem(elems[size]); size--; shift up and shift down
+
+5. Trie
+利用O（1）的时间查找字符串是否在字典里
+(1) 如何建立trie树？
+起始head有26个空指针，单词依次加入，单词的末尾加星号标记。
+
+(2) Trie vs Hash
+Trie可以一个一个字符串的查找，并且Trie更加节省空间; 需要一个一个遍历字符串或者内存紧张时用Trie比较好，平时用Hash编写比较容易。
