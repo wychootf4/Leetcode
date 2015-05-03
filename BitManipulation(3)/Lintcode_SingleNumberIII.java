@@ -32,7 +32,7 @@ public class Solution {
         for (int i : A){
             res ^= i;
         }
-        // 找出右边第一位是1的，只有那两个不同的数做异或才会导致这一位为1。
+        // 找出右边第一位是1的，只有那两个不同的数做异或才会导致这一位为1。这里留个问题：~(res - 1)
         res = res & ~(res - 1);
         int xorA = 0;
         int xorB = 0;
