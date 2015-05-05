@@ -18,7 +18,7 @@ class Element implements Comparable<Element>{
         this.value = value;
         this.index = index;
     }
-
+ 
     public int compareTo(Element other){
         return this.val - other.val;
     }
