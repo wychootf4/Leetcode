@@ -18,7 +18,9 @@ If nums=[3,2,2,1] and k=2, a valid answer is 1.
 Challenge
 Can you partition the array in-place and in O(n)?
 */
+// Tag: Array, Two Pointers, Sort
 
+// 实质是快排时partition的部分
 public class Solution {
     /**
     *@param nums: The integer array you should partition
