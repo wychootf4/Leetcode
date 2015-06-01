@@ -12,3 +12,24 @@ that the reversed integer might overflow. How would you handle such case?
 There is a more generic way of solving this problem.
 */
 // Tag: Math
+
+// 先把这个数给reverse，然后再比较是否一样，如果是一样的就是palindrome.注意负数的情况
+public class Solution {
+    public boolean isPalindrome(int x) {
+        if (x < 0){
+            return false;
+        }
+
+        return x == reverse(x);
+    }
+
+    private int reverse(int x){
+        long result = 0;
+        while (x != 0){
+            result = result * 10 + x % 10;
+            x = x / 10;
+        }
+
+        return (int)result;
+    }
+}

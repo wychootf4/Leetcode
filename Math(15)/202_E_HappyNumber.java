@@ -14,3 +14,33 @@ Example: 19 is a happy number
 1^2 + 0^2 + 0^2 = 1
 */
 // Tag: Hash Table, Math
+
+//用一个哈希表存储当前的值，如果有重复返回false，若没有则将新的值加入哈希表。如果最后能得到1就是happy number
+public class Solution {
+    public boolean isHappy(int n) {
+        if (n == 0){
+            return false;
+        }
+
+        Set<Integer> set = new HashSet<Integer>();
+        while (n != 1){
+            if (set.contains(n)){
+                return false;
+            }
+            set.add(n);
+            n = getNextHappy(n);
+        }
+
+        return true;
+    }
+    // 模10取当前最后一位，除10是整体消掉最后一位
+    private int getNextHappy(int n){
+        int sum = 0;
+        while (n != 0){
+            sum += (n % 10) * (n % 10);
+            n /= 10;
+        }
+
+        return sum;
+    }
+}

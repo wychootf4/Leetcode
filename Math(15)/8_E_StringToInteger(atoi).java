@@ -26,3 +26,41 @@ If no valid conversion could be performed, a zero value is returned. If the corr
 representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.
 */
 // Tag: Math, String
+
+// 先去掉前后的空位，如果去掉之后已经没有数字了直接返回0.然后检查每一位，如果不是数字直接跳出转换。首位判断是否为正负数，long来保存数据，
+// 最后返回结果时转换为int型。每次循环时候判断结果是否已经越界，如果越界返回最接近的整形大小极值。
+public class Solution {
+    public int myAtoi(String str) {
+        String newStr = str.trim();
+        if (newStr.length() == 0){
+            return 0;
+        }
+
+        long result = 0;
+        int sign = 1;
+        for (int i = 0; i < newStr.length(); i++){
+            char c = newStr.charAt(i);
+            if (i == 0 && c == '+'){
+                continue;
+            }else if (i == 0 && c == '-'){
+                sign = -1;
+                continue;
+            }
+
+            if (!(c >= '0' && c <= '9')){
+                break;
+            }
+
+            result = result * 10 + (c - '0');
+
+            if (result * sign <= Integer.MIN_VALUE){
+                return Integer.MIN_VALUE;
+            }
+            if (result * sign >= Integer.MAX_VALUE){
+                return Integer.MAX_VALUE;
+            }
+        }
+
+        return (int)result * sign;
+    }
+}
