@@ -33,3 +33,56 @@ Topological Sort.
 Topological sort could also be done via BFS.
 */
 // Tag: DFS, BFS, Graph, Topological Sort
+
+/*
+还是和上一题一样的思路，只是要加上结果数组记录过程。
+*/
+public class Solution {
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        if (prerequisites == null){
+            return new int[0];
+        }
+        if (numCourses == 0 || prerequisites.length == 0){
+            int[] result = new int[numCourses];
+            for (int i = 0; i < prerequisites.length; i++){
+                result[i] = i;
+            }
+        }
+
+        int[] counter = new int[numCourses];
+        for (int i = 0; i < prerequisites.length; i++){
+            counter[prerequisites[i][0]]++;
+        }
+
+        Queue<Integer> queue = new LinkedList<Integer>();
+        for (int i = 0; i < counter.length; i++){
+            if (counter[i] == 0){
+                queue.offer(i);
+            }
+        }
+
+        int nonPreNum = queue.size();
+        int[] result = new int[numCourses];
+        int retIndex = 0;
+        while (!queue.isEmpty()){
+            int top = queue.poll();
+            // top是没有先修课程的点，可以加入结果
+            result[retIndex++] = top;
+            for (int i = 0; i < prerequisites.length; i++){
+                if (prerequisites[i][1] == top){
+                    counter[prerequisites[i][0]]--;
+                    if (counter[prerequisites[i][0]] == 0){
+                        nonPreNum++;
+                        queue.offer(prerequisites[i][0]);
+                    }
+                }
+            }
+        }
+
+        if (nonPreNum == numCourses){
+            return result;
+        }else{
+            return new int[0];
+        }
+    }
+}
