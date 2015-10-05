@@ -13,3 +13,8 @@ deque (double-ended queue), as long as you use only standard operations of a que
 back, pop from front, size, and is empty operations are valid.
 */
 // Tag: Data Structure
+
+/*
+分析：
+
+*/
