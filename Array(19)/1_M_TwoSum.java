@@ -59,7 +59,7 @@ public class Solution {
         for (int i = 0; i < nums.length; i++){
             // 如果map中已经有target - nums[i]这个key了说明找到了
             if (map.containsKey(target - nums[i])){
-                // 该key早出现，index小
+                // target-nums[i]这个key早出现，index小，所以出现在前面
                 result[0] = map.get(target - nums[i]) + 1;
                 result[1] = i + 1;
                 return result;

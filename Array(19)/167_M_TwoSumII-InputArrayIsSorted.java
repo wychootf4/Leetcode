@@ -12,6 +12,9 @@ Output: index1=1, index2=2
 */
 // Tag: Array, Two Pointers, Binary Search
 
+/*
+主要思路：由于这里数组已经排序了，所以可以利用窗口法完成，从头尾两个指针扫，如果头尾和小于target则头向后移，如果大于target则尾向前移。
+*/
 public class Solution {
     public int[] twoSum(int[] numbers, int target) {
         int[] ans = new int[2];

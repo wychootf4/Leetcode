@@ -43,6 +43,7 @@ public class Solution {
             }
             counter++;
         }
+        
         return counter;
     }
 }

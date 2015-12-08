@@ -8,6 +8,10 @@ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 */
 // Tag: Array, Two Pointers
 
+/*
+主要思路：与3sum基本一致，只需要在每次循环遍历时维护一个变量closest记录与target差的最小的sum值，如果当前sum与target的差小于原closest
+值则更新
+*/
 public class Solution {
     public int threeSumClosest(int[] nums, int target) {
         if (nums == null || nums.length < 3){

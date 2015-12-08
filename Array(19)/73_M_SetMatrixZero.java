@@ -1,8 +1,6 @@
 /*
 Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
 
-click to show follow up.
-
 Follow up:
 Did you use extra space?
 A straight forward solution using O(mn) space is probably a bad idea.
@@ -12,6 +10,9 @@ Could you devise a constant space solution?
 // Tag: Array
 
 // 首先用cc中方法，但是这种是O(m + n)空间复杂度
+/*
+主要思路：
+*/
 public class Solution {
     public void setZeroes(int[][] matrix) {
         boolean[] rows = new boolean[matrix.length];

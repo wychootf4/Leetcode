@@ -9,6 +9,7 @@ For example, given [0, 1, 3, 50, 75], lower = 0 and upper = 99, return ["2", "4-
 分析：
 维护一个prev指针，判断与curr指针的差如果大于等于2则产生missing range。
 */
+
 public class Solution {
     public List<String> findMissingRanges(int[] nums, int lower, int upper) {
         List<String> result = new ArrayList<String>();
@@ -18,14 +19,15 @@ public class Solution {
             return result;
         }
 
-        // 初始prev为lower - 1可以避免开头为1，2...时的漏算
+        // 初始prev为lower - 1可以避免开头为1，2...时把0给漏算，比如这种情况下初始prev为-1，curr为1，就可以把0给找出来
         int prev = lower - 1;
         for (int i = 0; i <= nums.length; i++){
-            // 同样如果curr到数组末尾时应该为end + 1可以避免结尾为...97,98时的漏算
+            // 同样如果curr到数组末尾时应该为end + 1可以避免结尾为...97,98时把99给漏算
             int curr = (i == nums.length) ? upper + 1 : nums[i];
             if (curr - prev >= 2){
                 result.add(getRange(prev + 1, curr - 1));
             }
+            // 每次遍历完将prev指针指向当前curr处
             prev = curr;
         }
 
@@ -35,4 +37,5 @@ public class Solution {
     private String getRange(int start, int end){
         return (start == end) ? String.valueOf(start) : start + "->" + end;
     }
+
 }

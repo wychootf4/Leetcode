@@ -14,6 +14,10 @@ Return
 */
 // Tag: Array
 
+/*主要思路：利用两层循环，外层循环为行数，内层循环为各行的具体分布情况。根据规律可以得出除去第一行只有1之外，其余各行首位元素为1，其他元素为
+上一排相对应的元素以及其左边的元素之和，例如第三行第二个元素 2 = 第二行第二个元素+第二行第一个元素 = 1+1 = 2。每行计算完毕后将整行结果存入
+result中。
+*/
 public class Solution {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
