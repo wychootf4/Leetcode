@@ -1,3 +1,5 @@
+import java.util.List;
+
 /*
 Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.
 
@@ -24,3 +26,8 @@ A line other than the last line might contain only one word. What should you do 
 In this case, that line should be left-justified.
 */
 // Tag: String
+public class Solution {
+    public List<String> fullJustify(String[] words, int maxWidth) {
+
+    }
+}
