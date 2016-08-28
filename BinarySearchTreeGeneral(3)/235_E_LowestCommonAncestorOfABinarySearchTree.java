@@ -1,32 +1,19 @@
-/* http://answer.ninechapter.com/solutions/lowest-common-ancestor/
-   寻找两个结点的最近公共祖先
-            A
-           / \
-          B   C
-         / \
-        D   E
-           / \
-          F   G
-比如D和F的最近公共祖先就是B
-*/
-
 /*
-Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two nodes.
+Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes
+in the BST.
+According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between
+two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow
+a node to be a descendant of itself).”
 
-The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.
-
-Example
-              4
-             / \
-            3   7
-               / \
-              5   6
-
-For 3 and 5, the LCA is 4.
-
-For 5 and 6, the LCA is 7.
-
-For 6 and 7, the LCA is 7.
+            _______6______
+           /              \
+       ___2__          ___8__
+      /      \        /      \
+     0      _4       7       9
+           /  \
+          3   5
+For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another example is LCA of
+nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
 */
 
 Version 1: Traditional Method
@@ -58,6 +45,11 @@ public class Solution {
 
 Version 2: Divide & Conquer
 // 不需要额外的parent指针但是至少要给root点
+/*
+思路：用recursion处理，每次判断退出条件为root == null || root == node1 || root == node2
+若不许退出则Divide成当前root的左右两个节点进行处理，然后判断如果两个节点都不为空证明都返回值了，
+两边一边一个；若只有左边点不为空则返回left；若只有右边点不为空则返回right，若都为空则返回null
+*/
 public class Solution {
     // 如果不给root点就要给parent点然后求出root
     private TreeNode getRoot(node) {
@@ -65,6 +57,14 @@ public class Solution {
             node = node.parent;
         }
         return node;
+    }
+
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode A, TreeNode B) {
+            // write your code here
+            if (A == null || B == null){
+                return null;
+            }
+            return getAncestor(root, A, B);
     }
 
     private TreeNode getAncestor(TreeNode root, TreeNode node1, TreeNode node2) {
@@ -83,14 +83,14 @@ public class Solution {
         if (left != null && right != null) {
             return root;
         }
-        // 只有左边不为空则返回左边继续找
+        // 只有左边不为空证明只有左边有点，返回left
         if (left != null) {
             return left;
         }
         if (right != null) {
             return right;
         }
-        // 左右都为空就返回null
+        // 左右都为空就返回null,证明该处没有要找的节点
         return null;
     }
 
