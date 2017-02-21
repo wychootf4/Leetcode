@@ -36,6 +36,7 @@ public class Solution {
             // 后面的元素全部逆序
             if (nums[i] < nums[i + 1]){
                 int j = 0;
+                // 从dropIndex后面从右向左的顺序找到第一个比dropIndex大的元素与其交换
                 for (j = nums.length - 1; j > i; j--){
                     if (nums[j] > nums[i]){
                         swap(nums, i, j);

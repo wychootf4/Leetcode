@@ -16,6 +16,7 @@ Could you optimize your algorithm to use only O(k) extra space?
 由于此时存在result中对应index位置的值就是其上一层对应的值，按照计算公式更新即可。最后首位的1不作处理，因为index为0的值就是第一行的唯一元素1，
 不更新则一直为1。
 */
+
 public class Solution {
     public List<Integer> getRow(int rowIndex) {
         List<Integer> result = new ArrayList<Integer>();
