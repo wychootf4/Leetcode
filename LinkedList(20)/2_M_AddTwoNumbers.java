@@ -18,7 +18,7 @@ Output: 7 -> 0 -> 8
  */
 /*
 思路：由于链表是逆序的，所以只需要判断每一位上两个链表的节点和是多少，如果有进位就记录下来，将进位carry加到下一位的运算中
-由于就是遍历链表，因此时间复杂度为O(n),空间复杂度为O(1).
+由于就是遍历链表，因此时间复杂度为O(n),空间复杂度为O(n).
 */
 public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -50,3 +50,9 @@ public class Solution {
         return dummy.next;
     }
 }
+
+// Follow up: What if the the digits in the linked list are stored in non-reversed order? For example:
+// (3→4→2)+(4→6→5)=8→0→7
+/*
+思路：先将链表进行逆序操作，然后再进行上题的操作，否则如果两个链表位数不一样多的话无法判断
+*/
