@@ -31,6 +31,7 @@ public class Solution {
             String str = words[i];
             if (word1.equals(str)) {
                 index1 = i;
+
                 if (index2 != -1) {
                     minDistance = Math.min(minDistance, index1 - index2);
                 }
