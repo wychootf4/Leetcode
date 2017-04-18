@@ -93,8 +93,8 @@ public class Solution {
 }
 
 /*
-思路3：如果返回的是两个数而不是index，可以先对数组进行排序，然后维护头尾指针，如果头尾和大于target要将尾向前移，如果头尾和小于target
-要将头向后移。这样做的时间复杂度是O(nlogn),空间复杂度是O(1)
+思路3：如果返回的是两个数而不是index，可以先对数组进行排序，然后维护头尾指针，如果头尾和大于target要将尾向前移，如
+果头尾和小于target要将头向后移。这样做的时间复杂度是O(nlogn),空间复杂度是O(1)
 */
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
