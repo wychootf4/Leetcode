@@ -6,10 +6,17 @@ is "b", with the length of 1.
 // Tag: Hash Table, Two Pointers, String
 
 /*
-思路：
+Solution1: Use brute force to check all substrings to see if the characters within it is unique.
+The time complexity will be O(n^3).
+ */
+
+/*
+思路2：
 此题刚开始理解错误以为是求无重复的最大子串，忽视了是重复的字符，即子串必须所有的字符不同。那么利用哈希表存储某个字母及其最后出现的index的对应
 关系，并且维护两个指针，头指针指向无重复子串的头，尾指针指向尾；尾指针一直向后扫，如果发现了重复字符，并且该重复字符的出现位置是在头指针之后，则
 将头指针挪到该字符上一次出现位置的后一位，过程中持续更新最大子串的长度。
+
+This is slicing window method.
 */
 
 public class Solution {
@@ -41,3 +48,4 @@ public class Solution {
 }
 
 // 时间复杂度和空间复杂度都是O(n).
+
