@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f637f2bd-6252-478f-8337-8fd322260858" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LinkedList(20)/2_M_AddTwoNumbers.java" afterPath="$PROJECT_DIR$/LinkedList(20)/2_M_AddTwoNumbers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwoPointers(15)/3_M_LongestSubstringWithoutRepeatingCharacters.java" afterPath="$PROJECT_DIR$/TwoPointers(15)/3_M_LongestSubstringWithoutRepeatingCharacters.java" />
     </list>
     <ignored path="Leetcode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,25 +31,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="1_M_TwoSum.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Array(19)/1_M_TwoSum.java">
+      <file leaf-file-name="3_M_LongestSubstringWithoutRepeatingCharacters.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TwoPointers(15)/3_M_LongestSubstringWithoutRepeatingCharacters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="76" column="47" lean-forward="true" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
+            <state relative-caret-position="643">
+              <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
               <folding>
-                <element signature="e#0#3502#0" expanded="true" />
-                <element signature="e#2249#2267#0" expanded="true" />
+                <element signature="e#0#1454#0" expanded="true" />
+                <element signature="e#768#788#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2_M_AddTwoNumbers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LinkedList(20)/2_M_AddTwoNumbers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="44" column="51" lean-forward="true" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -85,6 +74,7 @@
         <option value="$PROJECT_DIR$/DynamicProgramming(29)/87_H_ScrambleString.java" />
         <option value="$PROJECT_DIR$/Array(19)/1_M_TwoSum.java" />
         <option value="$PROJECT_DIR$/LinkedList(20)/2_M_AddTwoNumbers.java" />
+        <option value="$PROJECT_DIR$/TwoPointers(15)/3_M_LongestSubstringWithoutRepeatingCharacters.java" />
       </list>
     </option>
   </component>
@@ -141,7 +131,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Array(19)" />
+              <option name="myItemId" value="TwoPointers(15)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -155,11 +145,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Array(19)" />
+              <option name="myItemId" value="TwoPointers(15)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="1_M_TwoSum.java" />
+              <option name="myItemId" value="3_M_LongestSubstringWithoutRepeatingCharacters.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,7 +397,7 @@
       <workItem from="1492550297952" duration="1262000" />
       <workItem from="1492558706011" duration="158000" />
       <workItem from="1495063713630" duration="649000" />
-      <workItem from="1495065205378" duration="2127000" />
+      <workItem from="1495065205378" duration="3930000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1449610348857</created>
@@ -462,7 +452,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4196000" />
+    <option name="totallyTimeSpent" value="5999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -792,14 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedList(20)/2_M_AddTwoNumbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="44" column="51" lean-forward="true" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Array(19)/1_M_TwoSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -807,6 +789,25 @@
           <folding>
             <element signature="e#0#3502#0" expanded="true" />
             <element signature="e#2249#2267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList(20)/2_M_AddTwoNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwoPointers(15)/3_M_LongestSubstringWithoutRepeatingCharacters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#1454#0" expanded="true" />
+            <element signature="e#768#788#0" expanded="true" />
           </folding>
         </state>
       </provider>
