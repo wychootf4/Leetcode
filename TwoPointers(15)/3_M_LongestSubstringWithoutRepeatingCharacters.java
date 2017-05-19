@@ -31,6 +31,7 @@ public class Solution {
         for (int end = 0; end < s.length(); end++){
             char c = s.charAt(end);
             // 发现重复元素且该元素是在统计区间内，即index在start的后面
+            // bug1: 要注意重复元素需要在统计区间内
             if (map.containsKey(c) && map.get(c) >= start){
                 // 将区间的start置为重复元素上一次出现位置的后一位，消除不合法
                 // 比如abcabcbb，扫到第二个a时就将头置为第一个b，因为此时第一个b是合法的，第一个abc串的长度
