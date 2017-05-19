@@ -24,6 +24,7 @@ public class Solution {
 
     public int findKth(int[] A, int startA, int[] B, int startB, int k){
         // 退出条件1：A的起始点位置已经大于数组长度，说明数组A的所有元素都被扔掉了，直接从B中取
+        // bug: index
         if (startA >= A.length){
             return B[startB + k - 1];
         }
@@ -36,10 +37,11 @@ public class Solution {
             return Math.min(A[startA], B[startB]);
         }
         // 如果当前数组长度已经不支持取到k/2个数了，则置成无穷大，在比较时候就不会被取到，确定不能被扔
-        int keyA = startA + k / 2 - 1 < A.length ? A[startA + k / 2 - 1] : Integer.MAX_VALUE;
-        int keyB = startB + k / 2 - 1 < B.length ? B[startB + k / 2 - 1] : Integer.MAX_VALUE;
+        int keyA = (startA + k / 2 - 1) < A.length ? A[startA + k / 2 - 1] : Integer.MAX_VALUE;
+        int keyB = (startB + k / 2 - 1) < B.length ? B[startB + k / 2 - 1] : Integer.MAX_VALUE;
         // 对于key小的数组，抛掉其前k/2个元素，因为他们肯定不会被取到
         if (keyA < keyB){
+            // bug: index, (startA + k / 2 - 1) + 1，后面的一个数
             return findKth(A, startA + k / 2, B, startB, k - k / 2); // 这里用k - k / 2处理k为奇数的情况
         }else{
             return findKth(A, startA, B, startB + k / 2, k - k / 2);
