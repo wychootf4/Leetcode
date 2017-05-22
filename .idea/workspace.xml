@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f637f2bd-6252-478f-8337-8fd322260858" name="Default" comment="" />
+    <list default="true" id="f637f2bd-6252-478f-8337-8fd322260858" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinarySearch(11)/4_H_MedianOfTwoSortedArrays.java" afterPath="$PROJECT_DIR$/BinarySearch(11)/4_H_MedianOfTwoSortedArrays.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/String(17)/5_M_LongestPalindromicSubstring.java" afterPath="$PROJECT_DIR$/String(17)/5_M_LongestPalindromicSubstring.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwoPointers(15)/3_M_LongestSubstringWithoutRepeatingCharacters.java" afterPath="$PROJECT_DIR$/TwoPointers(15)/3_M_LongestSubstringWithoutRepeatingCharacters.java" />
+    </list>
     <ignored path="Leetcode.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,13 +34,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="4_H_MedianOfTwoSortedArrays.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="1_M_TwoSum.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array(19)/1_M_TwoSum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <folding>
+                <element signature="e#2249#2267#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2_M_AddTwoNumbers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LinkedList(20)/2_M_AddTwoNumbers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#1785#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="4_H_MedianOfTwoSortedArrays.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BinarySearch(11)/4_H_MedianOfTwoSortedArrays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="58" lean-forward="false" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+            <state relative-caret-position="95">
+              <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5_M_LongestPalindromicSubstring.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/String(17)/5_M_LongestPalindromicSubstring.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
-                <element signature="e#0#1853#0" expanded="true" />
+                <element signature="e#0#1285#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,11 +83,10 @@
       <file leaf-file-name="3_M_LongestSubstringWithoutRepeatingCharacters.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwoPointers(15)/3_M_LongestSubstringWithoutRepeatingCharacters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+            <state relative-caret-position="171">
+              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding>
-                <element signature="e#0#1630#0" expanded="true" />
-                <element signature="e#942#962#0" expanded="true" />
+                <element signature="e#985#1005#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,6 +124,7 @@
         <option value="$PROJECT_DIR$/LinkedList(20)/2_M_AddTwoNumbers.java" />
         <option value="$PROJECT_DIR$/TwoPointers(15)/3_M_LongestSubstringWithoutRepeatingCharacters.java" />
         <option value="$PROJECT_DIR$/BinarySearch(11)/4_H_MedianOfTwoSortedArrays.java" />
+        <option value="$PROJECT_DIR$/String(17)/5_M_LongestPalindromicSubstring.java" />
       </list>
     </option>
   </component>
@@ -143,7 +182,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TwoPointers(15)" />
+              <option name="myItemId" value="String(17)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -157,29 +196,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TwoPointers(15)" />
+              <option name="myItemId" value="String(17)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="11_M_ContainerWithMostWater.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Leetcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Leetcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwoPointers(15)" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3_M_LongestSubstringWithoutRepeatingCharacters.java" />
+              <option name="myItemId" value="5_M_LongestPalindromicSubstring.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -643,7 +664,7 @@
       <workItem from="1492550297952" duration="1262000" />
       <workItem from="1492558706011" duration="158000" />
       <workItem from="1495063713630" duration="649000" />
-      <workItem from="1495065205378" duration="9394000" />
+      <workItem from="1495065205378" duration="12235000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1449610348857</created>
@@ -698,7 +719,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11463000" />
+    <option name="totallyTimeSpent" value="14304000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -768,7 +789,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="12/16/2015 update" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -781,7 +804,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3502#0" expanded="true" />
             <element signature="e#2249#2267#0" expanded="true" />
           </folding>
         </state>
@@ -792,7 +814,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3502#0" expanded="true" />
             <element signature="e#2249#2267#0" expanded="true" />
           </folding>
         </state>
@@ -810,7 +831,6 @@
         <state relative-caret-position="1596">
           <caret line="96" column="12" lean-forward="false" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
           <folding>
-            <element signature="e#0#3502#0" expanded="true" />
             <element signature="e#2249#2267#0" expanded="true" />
           </folding>
         </state>
@@ -977,13 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/String(17)/5_M_LongestPalindromicSubstring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/String(17)/68_H_TextJustification.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1028,25 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Array(19)/1_M_TwoSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="76" column="47" lean-forward="true" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#3502#0" expanded="true" />
-            <element signature="e#2249#2267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedList(20)/2_M_AddTwoNumbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BinarySearch(11)/153_M_FindMinimumInRotatedSortArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1055,23 +1049,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Array(19)/1_M_TwoSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#2249#2267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList(20)/2_M_AddTwoNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#1785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TwoPointers(15)/3_M_LongestSubstringWithoutRepeatingCharacters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        <state relative-caret-position="171">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
-            <element signature="e#0#1630#0" expanded="true" />
-            <element signature="e#942#962#0" expanded="true" />
+            <element signature="e#985#1005#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BinarySearch(11)/4_H_MedianOfTwoSortedArrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="58" lean-forward="false" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+        <state relative-caret-position="95">
+          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/String(17)/5_M_LongestPalindromicSubstring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
-            <element signature="e#0#1853#0" expanded="true" />
+            <element signature="e#0#1285#0" expanded="true" />
           </folding>
         </state>
       </provider>

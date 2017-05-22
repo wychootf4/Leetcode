@@ -3,6 +3,7 @@ There are two sorted arrays A and B of size m and n respectively.
 Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 */
 // Tag: Divide and Conquer, Array, Binary Search
+// Company: Google, Zenefits, Microsoft, Apple, Yahoo, Dropbox, Adobe
 
 /*
 本题相当于从两个数组中找到第k大的元素，而k就是正好一半的位置，又需要分奇偶进行判断，然后递归解决.

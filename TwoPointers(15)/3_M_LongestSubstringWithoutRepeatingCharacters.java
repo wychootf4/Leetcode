@@ -4,6 +4,7 @@ substring without repeating letters for "abcabcbb" is "abc", which the length is
 is "b", with the length of 1.
 */
 // Tag: Hash Table, Two Pointers, String
+// Company: Amazon, Adobe, Bloomberg, Yelp
 
 /*
 Solution1: Use brute force to check all substrings to see if the characters within it is unique.

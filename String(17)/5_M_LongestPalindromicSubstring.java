@@ -6,7 +6,9 @@ and there exists one unique longest palindromic substring.
 
 /*
 分析：
-另有DP的解法，这里用的是遍历一遍，记录以某个字符为中心所能取得的最大长度，持续更新。时间复杂度O(n^2),空间复杂度O(1)
+另有DP的解法，这里用的是遍历一遍，记录以某个字符为中心所能取得的最大长度，持续更新。需要注意的是由于回文有奇数中心和偶数中心
+两种，需要两种情况都考虑到，即aba型回文和abba型回文。
+时间复杂度O(n^2),空间复杂度O(1)
 */
 public class Solution {
     public String longestPalindrome(String s) {
@@ -46,3 +48,8 @@ public class Solution {
         return s.substring(left + 1, right);
     }
 }
+
+/*
+思路2：DP方法，不推荐，据说有的公司会拒掉DP的解法，详见：
+http://www.cnblogs.com/yuzhangcmu/p/4189068.html
+ */
