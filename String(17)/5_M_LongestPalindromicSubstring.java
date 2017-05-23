@@ -3,6 +3,7 @@ Given a string S, find the longest palindromic substring in S. You may assume th
 and there exists one unique longest palindromic substring.
 */
 // Tag: String
+// Company: Amazon, Microsoft, Bloomberg
 
 /*
 分析：

@@ -26,9 +26,17 @@ If no valid conversion could be performed, a zero value is returned. If the corr
 representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.
 */
 // Tag: Math, String
+// Company: Amazon, Microsoft, Bloomberg, Uber
 
-// 先去掉前后的空位，如果去掉之后已经没有数字了直接返回0.然后检查每一位，如果不是数字直接跳出转换。首位判断是否为正负数，long来保存数据，
-// 最后返回结果时转换为int型。每次循环时候判断结果是否已经越界，如果越界返回最接近的整形大小极值。
+/*
+先去掉前后的空位，如果去掉之后已经没有数字了直接返回0.然后检查每一位，如果不是数字直接跳出转换。首位判断是否为正负数，long来保存数据，
+最后返回结果时转换为int型。每次循环时候判断结果是否已经越界，如果越界返回最接近的整形大小极值。
+时间复杂度：O(n), 空间复杂度O(1)
+这里的requirement只是一种情况，即去掉首尾空格后正负符号必须出现在第一位，而且如果含有任何非法字符就不再处理直接返回0.
+还可以考虑处理去掉非法字符的情况。
+*/
+
+
 public class Solution {
     public int myAtoi(String str) {
         String newStr = str.trim();
@@ -52,7 +60,7 @@ public class Solution {
             }
 
             result = result * 10 + (c - '0');
-
+            // bug: forget to multiply sign
             if (result * sign <= Integer.MIN_VALUE){
                 return Integer.MIN_VALUE;
             }

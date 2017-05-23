@@ -18,8 +18,10 @@ Update (2014-11-10):
 Test cases had been added to test the overflow behavior.
 */
 // Tag: Math
+// Company: Apple, Bloomberg
 
 // 如果越界了返回0，先用long来处理，最后再返回int值
+// 时间复杂度：O(n),空间复杂度O(1)
 public class Solution {
     public int reverse(int x) {
         long result = 0;

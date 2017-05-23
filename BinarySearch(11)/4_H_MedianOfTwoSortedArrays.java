@@ -10,6 +10,8 @@ Find the median of the two sorted arrays. The overall run time complexity should
 由于题目要求用log时间解决，所以可以想到需要用二分法降低规模，要找到第k个大的元素，每次就要扔到k/2个元素。
 每次递归中将A和B数组各取前k/2元素，比较A[k/2]和B[k/2]的大小，如果前者小则A中0到k/2的这一半必然不会被取到，
 A的起始下标可以置为k/2+1，即把A中的前k/2个元素扔掉，反之亦然。
+
+时间复杂度是O(log(m + n)), 空间复杂度是O(h), h是recursion call的深度，或者说call stack的长度
  */
 
 public class Solution {
