@@ -19,14 +19,17 @@ isMatch("ab", ".*") → true
 isMatch("aab", "c*a*b") → true
 */
 // Tag: Dynamic Programming, Backtracking, String
+// Company: Google, Uber, Airbnb, Facebook, Twitter
 
 /*
 题意解析:注意这里*代表前面的一个字符出现0次或多次,比如.*表示.出现0次或多次,多个.可以匹配任一字符.
+也就是说，.是单独出现的，而*是与前一个字符一起出现的，c*可以是空，c，cc，ccc。。。
+.*也可以是空，.,..,...
 */
 // Reference: http://www.cnblogs.com/yuzhangcmu/p/4105529.html
 /*
-Solution1:利用递归实现,case1: p的第二个字符不是*,则判断p和s的第一个是否匹配(字符相同或p为.),若匹配则继续;
-case2:p的第二个字符是*,此时有两种情况,case2.1:*代表第一个字符出现0次,则检查s与p跳过前两位是否匹配; case2.2:
+Solution1:利用递归实现,case1: p的第二个字符不是*,则判断p和s的第一个字符是否匹配(字符相同或p为.),若匹配则继续;
+case2:p的第二个字符是*,此时有两种情况,case2.1:*代表第一个字符出现0次,则检查s的字符与p中跳过前两位的字符是否匹配; case2.2:
 *代表第一个字符出现1次或多次,则遍历第一个字符出现1,2,3..次的情况,直至不匹配出现
  */
 public class Solution {
@@ -36,39 +39,39 @@ public class Solution {
             return s.length() == 0;
         }
 
-        // special case length = 1
-        if (p.length() == 1) {
-            if (s.length() != p.length()) {
+        // special case，p串只有一个字符待匹配
+        // case 1: 如果p串的第二个字符不是*
+        if (p.length() == 1 || p.charAt(1) != '*') {
+            // s串为空匹配不成
+            if (s.length() < 1) {
                 return false;
             }
-            return p.charAt(0) == '.' || p.charAt(0) == s.charAt(0);
+            // p串的第一个字符跟s的匹配不上
+            if ((p.charAt(0) != s.charAt(0)) && (p.charAt(0) != '.')) {
+                return false;
+            } else {
+                // 第一个字符匹配上了则接着匹配余下来的部分
+                return isMatch(s.substring(1), p.substring(1));
+            }
         }
 
-        // second char of pattern != '*'
-        if (p.length() == 1 || p.charAt(1) != '*') {
-            // not matching if s is empty, or first char of p is neither . nor same as char of s
-            if (s.length() < 1 || (p.charAt(0) != '.' && p.charAt(0) != s.charAt(0))) {
-                return false;
+        // case 2: 如果p串的第二个字符是*
+        else {
+            //case 2.1: *代表0的情况，p直接从第三个字符开始匹配
+            if (isMatch(s, p.substring(2))) {
+                return true;
             }
-            // otherwise keep matching remain part
-            return isMatch(s.substring(1), p.substring(1));
-            // second char of p is '*'
-        } else {
-            int sLen = s.length();
-            // index = -1 means * stands for 0 element
-            // index >= 0 means * stands for 1 or more preceding elements
-            int index = -1;
-            // 如果当前位不匹配则跳出循环,返回false
-            // 如果当前位匹配则枚举*匹配0,1,2...位的情况
-            /*
-            例如s为aaaab,p为a*b,除了遍历第一个字符时以外,每次循环条件都要求当前index所指的s的char要与p的第一个字符匹配.
-            即在保证当前s的char与p的第一个字符匹配的前提下,去找s中第一个与p中的b所匹配的位置.
-             */
-            while (index < s.length() && (index < 0 || p.charAt(0) == '.' || p.charAt(0) == s.charAt(index))) {
-                if (isMatch(s.substring(index + 1), p.substring(2))) {
+
+            //case 2.2: a char & '*' can stand for 1 or more preceding element,
+            //so try every sub string
+            int i = 0;
+            // s串从头开始和p串第一个字符匹配，由于p串第二个字符是*，则s串需要一直匹配到不等于p串中第一个字符为止。
+            // 然后递归判断，s的下一个字符是不是和p串的第三个字符，也就是p串中新的字符匹配。
+            while (i < s.length() && (s.charAt(i) == p.charAt(0) || p.charAt(0) == '.')){
+                if (isMatch(s.substring(i + 1), p.substring(2))) {
                     return true;
                 }
-                index++;
+                i++;
             }
             return false;
         }
@@ -79,4 +82,5 @@ public class Solution {
 
 /*
 Solution2: DP
+http://www.cnblogs.com/yuzhangcmu/p/4105529.html
  */

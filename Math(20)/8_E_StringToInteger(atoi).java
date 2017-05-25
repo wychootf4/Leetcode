@@ -61,6 +61,7 @@ public class Solution {
 
             result = result * 10 + (c - '0');
             // bug: forget to multiply sign
+            // bug2: put the two condition out of the for loop,如果不放在for loop里，而input给的比long还长就会溢出出错
             if (result * sign <= Integer.MIN_VALUE){
                 return Integer.MIN_VALUE;
             }

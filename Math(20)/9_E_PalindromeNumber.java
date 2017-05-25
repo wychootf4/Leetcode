@@ -13,7 +13,11 @@ There is a more generic way of solving this problem.
 */
 // Tag: Math
 
-// 先把这个数给reverse，然后再比较是否一样，如果是一样的就是palindrome.注意负数的情况
+
+/*
+Solution1: 先把这个数给reverse，然后再比较是否一样，如果是一样的就是palindrome.注意负数的情况.
+时间复杂度O(n),空间复杂度O(1).
+ */
 public class Solution {
     public boolean isPalindrome(int x) {
         if (x < 0){
@@ -31,5 +35,35 @@ public class Solution {
         }
 
         return (int)result;
+    }
+}
+
+/*
+Solution2: 将数转换为String，然后判断回文串，时间复杂度O(n), 空间复杂度O(1),但是这样就用了extra space
+ */
+public class Solution {
+    public boolean isPalindrome(int x) {
+        // bug: misunderstanding, negative integers here can not be palindrome.
+        if (x < 0) {
+            return false;
+        }
+
+        String str = String.valueOf(x);
+
+        int start = 0;
+        if (str.charAt(0) == '-' || str.charAt(0) == '+') {
+            start = 1;
+        }
+        int end = str.length() - 1;
+
+        while (start < end) {
+            if (str.charAt(start) != str.charAt(end)) {
+                return false;
+            }
+            start++;
+            end--;
+        }
+
+        return true;
     }
 }
