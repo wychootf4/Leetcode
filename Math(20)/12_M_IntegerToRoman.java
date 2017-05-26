@@ -5,6 +5,7 @@ Given an integer, convert it to a roman numeral.
 Input is guaranteed to be within the range from 1 to 3999.
 */
 // Tag: Math, String
+// Company: Twitter
 
 /*
 Solution1:贪心法每次取尽量大，从nums中的第一档位开始依次做除法，每个档位能取到几次就把对应的字典中的罗马数字加入结果几次，直到

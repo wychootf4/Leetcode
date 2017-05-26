@@ -2,10 +2,12 @@
 Write a function to find the longest common prefix string amongst an array of strings.
 */
 // Tag: String
+// Company: Yelp
 
 /*
 分析：
 以第一个字符串为基准，遍历后面的字符串，设立一个指针j如果满足条件则j++，作为LCP的尾
+时间复杂度是O(n),空间复杂度是O(1).
 */
 public class Solution {
     public String longestCommonPrefix(String[] strs) {
