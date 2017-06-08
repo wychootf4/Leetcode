@@ -9,6 +9,7 @@ Note:
 Although the above answer is in lexicographical order, your answer could be in any order you want.
 */
 // Tag: String, Backtracking
+// Company: Amazon, Dropbox, Google, Uber, Facebook
 
 public class Solution {
     public List<String> letterCombinations(String digits) {
@@ -29,14 +30,17 @@ public class Solution {
         // index表示当前应该取哪个数字里面的字母了，这里取到的数字应该是digits中对应上一外层递归的后面一个字符
         // 比如给定digits是23，由于最开始path.length()长度为0，则会取到digits.charAt(0)对应的数字
         // 由于for循环中path.append()操作，path.length()长度加1，此时进入内层递归后则会取到charAt(1)对应的数字
+        // bug: 写成了digits.getNumericValue
         int index = Character.getNumericValue(digits.charAt(path.length()));
         // for循环遍历当前对应数字中所有的字母
         for (int i = 0; i < map[index].length; i++){
             // 将当前对应数字中的第i个字母(char)append到path中
+            // bug2: 写成了path.add
             path.append(map[index][i]);
             // 进入内层递归遍历检查digits中当前数字的后面一个数字
             letterHelper(result, map, digits, path);
             // 回溯，删除掉path中最后一个字母，for循环继续检查当前对应数字的下一个字母
+            // bug3: wrong method name, removeCharAt
             path.deleteCharAt(path.length() - 1);
         }
     }
