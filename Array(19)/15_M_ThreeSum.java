@@ -12,10 +12,12 @@ The solution set must not contain duplicate triplets.
     (-1, -1, 2)
 */
 // Tag: Array, Two Pointers
+// Company: Amazon, Microsoft, Bloomberg, Facebook, Adobe, Work Applications
 
 /*
 主要思路：题目需要找到所有和为0的三元组而不是求出其index，所以可以先对数组进行排序,然后枚举第一个数，然后利用头尾指针寻找后两个数，如果能
 找到和为0则加入result中，如果和小于0则头指针向后移，如果和大于0则尾指针向前移。
+时间复杂度为O(n^2),空间复杂度为O(1).
 */
 public class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
@@ -28,7 +30,8 @@ public class Solution {
 
         // 然后枚举三个数中的第一个数,由于是三元组且为升序，所以首个数的index至多为nums.length-3
         for (int i = 0; i < nums.length - 2; i++){
-            // 去掉重复元素，像是[0, 0, 0, 0]，这里考虑应该再加上nums[i] != 0的条件，否则所有都为0的情况不能被执行
+            // 去掉重复元素
+            // 比如[-1, -1, -1, 2]第二个-1没有必要出现因为实际的解[-1, -1, 2]通过第一个-1就能得出
             if (i != 0 && nums[i] == nums[i - 1]){
                 continue;
             }

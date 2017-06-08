@@ -7,10 +7,12 @@ For example, given array S = {-1 2 1 -4}, and target = 1.
 The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 */
 // Tag: Array, Two Pointers
+// Company: Bloomberg
 
 /*
 主要思路：与3sum基本一致，只需要在每次循环遍历时维护一个变量closest记录与target差的最小的sum值，如果当前sum与target的差小于原closest
 值则更新
+时间复杂度是O(n^2),空间复杂度是O(1).
 */
 public class Solution {
     public int threeSumClosest(int[] nums, int target) {
@@ -20,9 +22,11 @@ public class Solution {
 
         Arrays.sort(nums);
         // 与3 sum比较只需多加一个变量记录与target差距最小的sum即可
-        int closest = Integer.MAX_VALUE / 2;
+        // 此处可以保证closest-负数的target不会overflow
+        long closest = Integer.MAX_VALUE;
 
         for (int i = 0; i < nums.length - 2; i++){
+            // bug: wrong start index as 0
             int start = i + 1;
             int end = nums.length - 1;
 
@@ -40,6 +44,6 @@ public class Solution {
             }
         }
 
-        return closest;
+        return (int)closest;
     }
 }
