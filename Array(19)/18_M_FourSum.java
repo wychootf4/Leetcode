@@ -15,7 +15,7 @@ The solution set must not contain duplicate quadruplets.
 // Tag: Array, Hash Table, Two Pointers
 
 
-// 思路1：外面双层循环，里面2sum，时间复杂度O(n^3)
+// 思路1：外面双层循环，里面2sum，时间复杂度O(n^3),空间复杂度是O(1).
 /*
 主要思路：外面双层循环分别定位第一个和第二个数，最后两个数用2sum解决
 */

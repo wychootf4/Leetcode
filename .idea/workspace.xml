@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f637f2bd-6252-478f-8337-8fd322260858" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backtracking(18)/17_M_LetterCombinationsOfAPhoneNumber.java" afterPath="$PROJECT_DIR$/Backtracking(18)/17_M_LetterCombinationsOfAPhoneNumber.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Array(19)/18_M_FourSum.java" afterPath="$PROJECT_DIR$/Array(19)/18_M_FourSum.java" />
     </list>
     <ignored path="Leetcode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,13 +57,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="16_M_ThreeSumClosest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="16_M_ThreeSumClosest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Array(19)/16_M_ThreeSumClosest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="711">
               <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="e#0#1460#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="18_M_FourSum.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Array(19)/18_M_FourSum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-255">
+              <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#2502#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,6 +124,7 @@
         <option value="$PROJECT_DIR$/Array(19)/15_M_ThreeSum.java" />
         <option value="$PROJECT_DIR$/Array(19)/16_M_ThreeSumClosest.java" />
         <option value="$PROJECT_DIR$/Backtracking(18)/17_M_LetterCombinationsOfAPhoneNumber.java" />
+        <option value="$PROJECT_DIR$/Array(19)/18_M_FourSum.java" />
       </list>
     </option>
   </component>
@@ -172,6 +186,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Array(19)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Leetcode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Leetcode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Array(19)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="18_M_FourSum.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -675,7 +707,7 @@
       <workItem from="1492558706011" duration="158000" />
       <workItem from="1495063713630" duration="649000" />
       <workItem from="1495065205378" duration="23220000" />
-      <workItem from="1496687079462" duration="4382000" />
+      <workItem from="1496687079462" duration="4523000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1449610348857</created>
@@ -730,7 +762,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33789000" />
+    <option name="totallyTimeSpent" value="33930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -810,16 +842,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DynamicProgramming(29)/10_H_RegularExpressionMatching.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#2653#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Math(20)/12_M_IntegerToRoman.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -1190,6 +1212,16 @@
           <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="e#0#1460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array(19)/18_M_FourSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#2502#0" expanded="true" />
           </folding>
         </state>
       </provider>
