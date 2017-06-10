@@ -23,13 +23,19 @@ Try to do this in one pass.
 *     }
 * }
 */
+/*
+Solution: 利用快慢指针，要移除距离表尾的第n个点，就让快指针比慢指针先走n步，然后快慢指针一起向后移动。
+这样当快指针到达表尾的时候，慢指针恰好指向要删除结点的前继位置，删除相应点即可，注意加一个dummy点到head的
+前面以处理要删除head的情况。
+时间复杂度是O(n),空间复杂度是O(1).
+ */
 public class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        if (n <= 0){
+        if (n <= 0 || head == null){
             return null;
         }
 
-        // 加入dummy node防止要删除的点是第一个节点
+        // 加入dummy node防止要删除的点是第一个节点，或者整个链表只有一个结点
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         // 要删掉某一个点要先找到它前面的一个点，所以slow初始在dummy而fast初始在dummy.next
@@ -38,6 +44,7 @@ public class Solution {
 
         // 初始slow和fast差一步，再让fast多走出n步，这样能保证slow走到最后是倒数第n个点的前继节点
         for (int i = 0; i < n; i++){
+            // 证明n比链表还要长，不成立
             if (fast == null){
                 return null;
             }
@@ -54,3 +61,8 @@ public class Solution {
         return dummy.next;
     }
 }
+
+/*
+Solution2: 还有一种解法是two-pass，从尾部删除第n个点，就相当于是从头部删除第L - n + 1个点，因此第一个pass可以得到
+链表的长度，然后根据链表的长度删除相对应的点。这个不如Solution1.
+ */

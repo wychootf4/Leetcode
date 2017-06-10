@@ -4,7 +4,13 @@ Given a string containing just the characters '(', ')', '{', '}', '[' and ']', d
 The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
 */
 // Tag: Stack, String
+// Company: Google, Airbnb, Facebook, Twitter, Zenefits, Amazon, Microsoft, Bloomberg
 
+/*
+Solution: 利用一个stack，遍历字符串，如果当前字符是左半边就入栈，而如果是右半边，就和栈顶比较；如果当前字符与栈顶
+匹配则弹栈，证明匹配上，否则非法。最后如果栈不为空则证明有左半边没有被匹配上，也非法。
+时间复杂度为O(n),空间复杂度为O(1).
+ */
 public class Solution {
     public boolean isValid(String s) {
         if (s == null || s.length() == 0){

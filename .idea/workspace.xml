@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f637f2bd-6252-478f-8337-8fd322260858" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Array(19)/18_M_FourSum.java" afterPath="$PROJECT_DIR$/Array(19)/18_M_FourSum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LinkedList(20)/19_E_RemoveNthNodeFromEndOfList.java" afterPath="$PROJECT_DIR$/LinkedList(20)/19_E_RemoveNthNodeFromEndOfList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/String(17)/20_E_ValidParentheses.java" afterPath="$PROJECT_DIR$/String(17)/20_E_ValidParentheses.java" />
     </list>
     <ignored path="Leetcode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,13 +69,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="18_M_FourSum.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="18_M_FourSum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Array(19)/18_M_FourSum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="1159">
+              <caret line="61" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding>
                 <element signature="e#0#2502#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="19_E_RemoveNthNodeFromEndOfList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LinkedList(20)/19_E_RemoveNthNodeFromEndOfList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1254">
+              <caret line="66" column="37" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#1616#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20_E_ValidParentheses.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/String(17)/20_E_ValidParentheses.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#1319#0" expanded="true" />
+                <element signature="e#666#677#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,6 +150,8 @@
         <option value="$PROJECT_DIR$/Array(19)/16_M_ThreeSumClosest.java" />
         <option value="$PROJECT_DIR$/Backtracking(18)/17_M_LetterCombinationsOfAPhoneNumber.java" />
         <option value="$PROJECT_DIR$/Array(19)/18_M_FourSum.java" />
+        <option value="$PROJECT_DIR$/LinkedList(20)/19_E_RemoveNthNodeFromEndOfList.java" />
+        <option value="$PROJECT_DIR$/String(17)/20_E_ValidParentheses.java" />
       </list>
     </option>
   </component>
@@ -184,7 +211,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Array(19)" />
+              <option name="myItemId" value="String(17)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -198,47 +225,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Array(19)" />
+              <option name="myItemId" value="String(17)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="18_M_FourSum.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Leetcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Leetcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Array(19)" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="16_M_ThreeSumClosest.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Leetcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Leetcode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Array(19)" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="15_M_ThreeSum.java" />
+              <option name="myItemId" value="20_E_ValidParentheses.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -707,7 +698,7 @@
       <workItem from="1492558706011" duration="158000" />
       <workItem from="1495063713630" duration="649000" />
       <workItem from="1495065205378" duration="23220000" />
-      <workItem from="1496687079462" duration="4523000" />
+      <workItem from="1496687079462" duration="7680000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1449610348857</created>
@@ -762,7 +753,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33930000" />
+    <option name="totallyTimeSpent" value="37087000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -842,21 +833,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Math(20)/12_M_IntegerToRoman.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array(19)/1_M_TwoSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Array(19)/1_M_TwoSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1218,10 +1194,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Array(19)/18_M_FourSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        <state relative-caret-position="1159">
+          <caret line="61" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
             <element signature="e#0#2502#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList(20)/19_E_RemoveNthNodeFromEndOfList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="66" column="37" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#1616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/String(17)/20_E_ValidParentheses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#1319#0" expanded="true" />
+            <element signature="e#666#677#0" expanded="true" />
           </folding>
         </state>
       </provider>
