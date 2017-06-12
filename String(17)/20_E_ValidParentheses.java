@@ -13,7 +13,7 @@ Solution: 利用一个stack，遍历字符串，如果当前字符是左半边�
  */
 public class Solution {
     public boolean isValid(String s) {
-        if (s == null || s.length() == 0){
+        if (s == null || s.length() == 0 || s.length() % 2 == 1){
             return false;
         }
 
