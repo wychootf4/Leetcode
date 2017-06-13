@@ -6,7 +6,13 @@ For example, given n = 3, a solution set is:
 "((()))", "(()())", "(())()", "()(())", "()()()"
 */
 // Tag: Backtracking, String
+// Company: Google, Uber, Zenefits
 
+/*
+Solution: 利用递归，计算左括号和右括号的剩余数目，如果左右括号都剩下0证明都加上了，将当前的path加入result中；
+注意判断退出条件。
+时间复杂度为O(nlogn),空间复杂度为O(logn).
+ */
 public class Solution {
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<String>();
@@ -34,7 +40,7 @@ public class Solution {
         }
 
         gpHelper(result, path.append("("), left - 1, right);
-        // remove掉进入内层递归时加到参数path上的括号，回溯
+        // remove掉进入内层递归时加到参数path上的括号，回溯，也就是left或者right刚刚从0减到-1的时候
         path.deleteCharAt(path.length() - 1);
         gpHelper(result, path.append(")"), left, right - 1);
         path.deleteCharAt(path.length() - 1);
