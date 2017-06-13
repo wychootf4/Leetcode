@@ -25,6 +25,10 @@ Solution: 由于不知道第一个点是哪个链表的，所以使用dummy点�
  */
 public class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 == null && l2 == null) {
+            return null;
+        }
+
         // 由于不知道头一个是l1还是l2节点，所以用dummy node
         ListNode dummy = new ListNode(0);
         ListNode lastNode = dummy;
@@ -38,6 +42,7 @@ public class Solution {
                 lastNode.next = l2;
                 l2 = l2.next;
             }
+            // bug: forget this
             lastNode = lastNode.next;
         }
 
