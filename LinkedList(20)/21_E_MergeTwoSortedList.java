@@ -5,6 +5,7 @@ Example
 Given 1->3->8->11->15->null, 2->null , return 1->2->3->8->11->15->null
 */
 // Tag: Linked List
+// Company: Amazon, Linkedin, Apple, Microsoft
 
 /**
 * Definition for singly-linked list.
@@ -17,6 +18,11 @@ Given 1->3->8->11->15->null, 2->null , return 1->2->3->8->11->15->null
 *     }
 * }
 */
+/*
+Solution: 由于不知道第一个点是哪个链表的，所以使用dummy点，这个技巧适用于所有可能会处理头结点的链表问题。
+然后依次比较l1和l2的当前点，小的接上，而最后如果l1或者l2有剩余的直接接到最后面。
+时间复杂度是O(n),空间复杂度是O(1).
+ */
 public class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         // 由于不知道头一个是l1还是l2节点，所以用dummy node
