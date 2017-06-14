@@ -24,6 +24,17 @@ For k = 3, you should return: 3->2->1->4->5
  *     ListNode(int x) { val = x; }
  * }
  */
+/*
+Solution: 先遍历一遍链表，根据链表的长度计算有几组需要翻转，维护一系列的指针，依次处理各组链表，最后如果还有不足一组的
+结点则接到最后面。
+
+处理各组链表时维护当前组链表的currHead和currTail指针，然后使用prev，curr和next指针依次处理组中的每个元素。
+处理完当前组中的所有元素后将prevTail指针更新成currTail所指的结点。
+
+另外需要判断如果prevTail指针为null则说明是第一组元素，将表头head置为currHead指针所指的结点，否则就将prevTail.next置为
+currHead。
+时间复杂度是O(n^2),空间复杂度是O(1).
+ */
 public class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
         // 分0组或者1组
@@ -38,6 +49,7 @@ public class Solution {
             length++;
         }
         int group = length / k;
+        // 不足1组
         if (group == 0){
             return head;
         }
@@ -64,6 +76,7 @@ public class Solution {
                 if (j == (k - 1)){
                     currHead = curr;
                 }
+                // 处理完当前元素后将curr指针向后移一位
                 curr = nextNode;
             }
             // 处理完每组元素后判定如果preTail为空证明这是第一组元素，将head指向currHead；否则将currHead接上preTail
@@ -72,9 +85,11 @@ public class Solution {
             }else{
                 preTail.next = currHead;
             }
+            // 更新preTail为当前组元素的尾
             preTail = currTail;
         }
         // 处理完所有元素后链表可能还有剩余，而此时的curr正好指向剩余元素的头一个，在最后一次循环时curr = nextNode
+        // 如果没有剩余则curr正好指向null
         preTail.next = curr;
 
         return head;
