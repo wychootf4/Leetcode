@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f637f2bd-6252-478f-8337-8fd322260858" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwoPointers(15)/26_E_RemoveDuplicatesFromSortedArray.java" afterPath="$PROJECT_DIR$/TwoPointers(15)/26_E_RemoveDuplicatesFromSortedArray.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LinkedList(20)/25_H_ReverseNodesInKGroups.java" afterPath="$PROJECT_DIR$/LinkedList(20)/25_H_ReverseNodesInKGroups.java" />
     </list>
     <ignored path="Leetcode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,26 +31,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="25_H_ReverseNodesInKGroups.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LinkedList(20)/25_H_ReverseNodesInKGroups.java">
+      <file leaf-file-name="26_E_RemoveDuplicatesFromSortedArray.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TwoPointers(15)/26_E_RemoveDuplicatesFromSortedArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+            <state relative-caret-position="131">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
-                <element signature="e#0#2712#0" expanded="true" />
+                <element signature="e#0#1655#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="26_E_RemoveDuplicatesFromSortedArray.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TwoPointers(15)/26_E_RemoveDuplicatesFromSortedArray.java">
+      <file leaf-file-name="25_H_ReverseNodesInKGroups.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LinkedList(20)/25_H_ReverseNodesInKGroups.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#1239#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="213">
+              <caret line="15" column="2" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,8 +103,8 @@
         <option value="$PROJECT_DIR$/Backtracking(18)/22_M_GenerateParentheses.java" />
         <option value="$PROJECT_DIR$/LinkedList(20)/23_H_MergeKSortedLists.java" />
         <option value="$PROJECT_DIR$/LinkedList(20)/24_M_SwapNodesInPairs.java" />
-        <option value="$PROJECT_DIR$/LinkedList(20)/25_H_ReverseNodesInKGroups.java" />
         <option value="$PROJECT_DIR$/TwoPointers(15)/26_E_RemoveDuplicatesFromSortedArray.java" />
+        <option value="$PROJECT_DIR$/LinkedList(20)/25_H_ReverseNodesInKGroups.java" />
       </list>
     </option>
   </component>
@@ -166,7 +164,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TwoPointers(15)" />
+              <option name="myItemId" value="LinkedList(20)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -180,11 +178,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TwoPointers(15)" />
+              <option name="myItemId" value="LinkedList(20)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="26_E_RemoveDuplicatesFromSortedArray.java" />
+              <option name="myItemId" value="25_H_ReverseNodesInKGroups.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -653,7 +651,7 @@
       <workItem from="1492558706011" duration="158000" />
       <workItem from="1495063713630" duration="649000" />
       <workItem from="1495065205378" duration="23220000" />
-      <workItem from="1496687079462" duration="18866000" />
+      <workItem from="1496687079462" duration="19054000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1449610348857</created>
@@ -708,7 +706,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48273000" />
+    <option name="totallyTimeSpent" value="48461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1183,23 +1181,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedList(20)/25_H_ReverseNodesInKGroups.java">
+    <entry file="file://$PROJECT_DIR$/TwoPointers(15)/26_E_RemoveDuplicatesFromSortedArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        <state relative-caret-position="131">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#0#2712#0" expanded="true" />
+            <element signature="e#0#1655#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TwoPointers(15)/26_E_RemoveDuplicatesFromSortedArray.java">
+    <entry file="file://$PROJECT_DIR$/LinkedList(20)/25_H_ReverseNodesInKGroups.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1239#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="213">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
