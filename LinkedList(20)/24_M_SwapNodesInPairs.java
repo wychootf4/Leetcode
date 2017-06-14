@@ -8,9 +8,12 @@ Your algorithm should use only constant space. You may not modify the values in 
 can be changed.
 */
 // Tag: Linked List
+// Company: Microsoft, Bloomberg, Uber
 
 /*
 分析：注意处理好待翻转的两个元素与其前后的两个元素间的指针关系即可，用一个pre指针保存待翻的两个元素中前一个元素的上一个节点是什么。
+每次翻转好两个结点后将prev移到翻转后的第二个结点处，继续向后处理。
+时间复杂度是O(n),空间复杂度是O(1).
 */
 /**
  * Definition for singly-linked list.
@@ -45,6 +48,38 @@ public class Solution {
 
             // 将pre移到翻转后的第二个元素位置
             pre = tmp;
+        }
+
+        return dummy.next;
+    }
+}
+
+// 稍微不同的自己写的版本
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public ListNode swapPairs(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode prev = dummy;
+
+        while (prev.next != null && prev.next.next != null) {
+            ListNode curr = prev.next;
+            ListNode next = curr.next.next;
+            prev.next = curr.next;
+            curr.next.next = curr;
+            curr.next = next;
+            prev = curr;
         }
 
         return dummy.next;
