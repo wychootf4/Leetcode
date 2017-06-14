@@ -2,6 +2,7 @@
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 */
 // Tag: Divide and Conquer, Linked List, Heap
+// Company: Linkedin, Google, Uber, Airbnb, Facebook, Twitter, Amazon, Microsoft
 
 // Reference: http://www.cnblogs.com/yuzhangcmu/p/4146119.html
 // Solution1: 用递归的方法将k个链表的合并问题分解到两个链表的合并
@@ -29,11 +30,12 @@ public class Solution {
 
     private ListNode helper(List<ListNode> lists, int left, int right){
         if (left < right){
+            // divide
             int mid = left + (right - left) / 2;
-            // 一直分到只有两个链表，然后进行合并回溯
+            // 一直分到只有两个链表，然后进行合并回溯, conquer
             return merge(helper(lists, left, mid), helper(lists, mid + 1, right));
         }
-
+        // 返回当前合并后的表头
         return lists.get(left);
     }
 

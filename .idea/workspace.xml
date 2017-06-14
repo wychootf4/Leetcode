@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f637f2bd-6252-478f-8337-8fd322260858" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backtracking(18)/22_M_GenerateParentheses.java" afterPath="$PROJECT_DIR$/Backtracking(18)/22_M_GenerateParentheses.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LinkedList(20)/23_H_MergeKSortedLists.java" afterPath="$PROJECT_DIR$/LinkedList(20)/23_H_MergeKSortedLists.java" />
     </list>
     <ignored path="Leetcode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +32,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="22_M_GenerateParentheses.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="22_M_GenerateParentheses.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Backtracking(18)/22_M_GenerateParentheses.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="627">
@@ -41,6 +41,16 @@
                 <element signature="e#0#1695#0" expanded="true" />
                 <element signature="e#504#512#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="23_H_MergeKSortedLists.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LinkedList(20)/23_H_MergeKSortedLists.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,6 +103,7 @@
         <option value="$PROJECT_DIR$/String(17)/20_E_ValidParentheses.java" />
         <option value="$PROJECT_DIR$/LinkedList(20)/21_E_MergeTwoSortedList.java" />
         <option value="$PROJECT_DIR$/Backtracking(18)/22_M_GenerateParentheses.java" />
+        <option value="$PROJECT_DIR$/LinkedList(20)/23_H_MergeKSortedLists.java" />
       </list>
     </option>
   </component>
@@ -152,7 +163,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Backtracking(18)" />
+              <option name="myItemId" value="LinkedList(20)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -166,11 +177,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Backtracking(18)" />
+              <option name="myItemId" value="LinkedList(20)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="22_M_GenerateParentheses.java" />
+              <option name="myItemId" value="23_H_MergeKSortedLists.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -639,7 +650,7 @@
       <workItem from="1492558706011" duration="158000" />
       <workItem from="1495063713630" duration="649000" />
       <workItem from="1495065205378" duration="23220000" />
-      <workItem from="1496687079462" duration="10522000" />
+      <workItem from="1496687079462" duration="11771000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1449610348857</created>
@@ -694,7 +705,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39929000" />
+    <option name="totallyTimeSpent" value="41178000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -774,13 +785,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Array(19)/1_M_TwoSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="96" column="12" lean-forward="false" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DynamicProgramming(29)/87_H_ScrambleString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1174,6 +1178,14 @@
             <element signature="e#0#1695#0" expanded="true" />
             <element signature="e#504#512#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList(20)/23_H_MergeKSortedLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
