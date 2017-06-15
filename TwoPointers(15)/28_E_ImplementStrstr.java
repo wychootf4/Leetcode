@@ -6,6 +6,7 @@ Returns the index of the first occurrence of needle in haystack, or -1 if needle
 // Tag: Two Pointers, String
 
 // Solution1: 用indexOf解决
+// 时间复杂度O(n^2),空间复杂度O(1).
 public class Solution {
     public int strStr(String haystack, String needle) {
         if (haystack == null || needle == null){
@@ -20,15 +21,17 @@ public class Solution {
     }
 }
 
-// Solution2: 用两个指针解决
+// Solution2: 用两个指针解决, 逐个遍历haystack中合法的字符，同时与needle匹配，最后看needle是否都被匹配上了。
+// 时间复杂度O(n^2),空间复杂度O(1).
 public class Solution {
     public int strStr(String haystack, String needle) {
         if (haystack == null || needle == null){
             return -1;
         }
 
-        int i, j;
-        for (i = 0; i < haystack.length() - needle.length() + 1; i++){
+        int j = 0;
+        // haystack中index最远能到needle开头长度的地方，否则再往后所剩的长度就比needle短了
+        for (int i = 0; i < haystack.length() - needle.length() + 1; i++){
             for (j = 0; j < needle.length(); j++){
                 if (haystack.charAt(i + j) != needle.charAt(j)){
                     break;
