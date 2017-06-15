@@ -4,6 +4,7 @@ Implement strStr().
 Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 */
 // Tag: Two Pointers, String
+// Company: Pocket Gems, Microsoft, Apple, Facebook
 
 // Solution1: 用indexOf解决
 // 时间复杂度O(n^2),空间复杂度O(1).
